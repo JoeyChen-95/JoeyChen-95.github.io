@@ -13,7 +13,7 @@
 
 
 
-<title>First Article | Hexo</title>
+<title>How to calculate 1+1=2 | Hexo</title>
 
 
 
@@ -127,11 +127,76 @@
                 <div class="container">
     
     
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
 
     
     <article class="post-wrap">
         <header class="post-header">
-            <h1 class="post-title">First Article</h1>
+            <h1 class="post-title">How to calculate 1+1=2</h1>
             
                 <div class="post-meta">
                     
@@ -149,7 +214,38 @@
         </header>
 
         <div class="post-content">
-            
+            <h1 id="How-to-Calculate-1-1-2"><a href="#How-to-Calculate-1-1-2" class="headerlink" title="How to Calculate 1 + 1 &#x3D; 2"></a>How to Calculate 1 + 1 &#x3D; 2</h1><p>Mathematics is a fundamental part of our daily lives, and understanding basic arithmetic is essential. One of the simplest calculations you can perform is addition, specifically adding the numbers 1 and 1 together. Let’s break down how to calculate (1 + 1 &#x3D; 2) in a step-by-step manner.</p>
+<h2 id="What-is-Addition"><a href="#What-is-Addition" class="headerlink" title="What is Addition?"></a>What is Addition?</h2><p>Addition is one of the basic operations in arithmetic. It involves combining two or more numbers to find their total. The symbol for addition is the plus sign (+).</p>
+<h3 id="Basic-Concept"><a href="#Basic-Concept" class="headerlink" title="Basic Concept"></a>Basic Concept</h3><p>When you add two numbers, you are essentially counting how many items you have in total. For example, if you have one apple and someone gives you another apple, you now have two apples. This is the basic idea behind (1 + 1).</p>
+<h2 id="Step-by-Step-Calculation"><a href="#Step-by-Step-Calculation" class="headerlink" title="Step-by-Step Calculation"></a>Step-by-Step Calculation</h2><p>Let’s go through the process of adding 1 and 1 together.</p>
+<ol>
+<li><p><strong>Start with the first number:</strong></p>
+<ul>
+<li>You have the number 1.</li>
+</ul>
+</li>
+<li><p><strong>Add the second number:</strong></p>
+<ul>
+<li>Now, add another 1 to the first number.</li>
+</ul>
+</li>
+<li><p><strong>Count the total:</strong></p>
+<ul>
+<li>If you start with 1 and add another 1, you can count the total.</li>
+<li>Start at 1 and count one more: <strong>1, 2</strong>.</li>
+</ul>
+</li>
+</ol>
+<p>So, after adding 1 and 1 together, you end up with 2.</p>
+<h2 id="Visual-Representation"><a href="#Visual-Representation" class="headerlink" title="Visual Representation"></a>Visual Representation</h2><p>Sometimes it helps to see a visual representation of the calculation:</p>
+<p>1</p>
+<pre><code>•	1
+</code></pre>
+<p>2</p>
+<p>Each “1” represents a single unit. When you add them together, you get two units in total.</p>
+<h2 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h2><p>And that’s it! The result of (1 + 1) is simply 2. This basic arithmetic operation is the foundation for many other more complex calculations in mathematics. Understanding addition is crucial, and mastering this simple concept will help you as you progress to more advanced topics in math.</p>
+<p>Remember, practice makes perfect, so keep practicing your addition skills!</p>
+
         </div>
 
         
@@ -186,6 +282,10 @@
                 <span>Tag(s):</span>
                 <span class="tag">
                     
+                    
+                        <a href="/tags/Math/"># Math</a>
+                    
+                        
                 </span>
             </div>
             <div>
