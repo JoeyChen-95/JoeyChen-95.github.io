@@ -10,7 +10,7 @@ description:
 <div class="contact-section">
     <div class="contact-item">
         <i class="fas fa-envelope"></i>
-        <a href="mailto:junjian.chen@mail.utoronto.ca">qinsun@student.ethz.ch</a>
+        <a href="mailto:junjian.chen@mail.utoronto.ca">junjian.chen@mail.utoronto.ca</a>
     </div>
     <div class="contact-item">
         <i class="fas fa-map-marker-alt"></i>
@@ -18,7 +18,7 @@ description:
     </div>
     <div class="contact-item">
         <i class="fab fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/junjian-chen-b582791a0/">Qingyi Sun</a>
+        <a href="https://www.linkedin.com/in/junjian-chen-b582791a0/">Junjian Chen</a>
     </div>
 </div>
 

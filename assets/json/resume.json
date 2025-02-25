@@ -222,14 +222,7 @@
       "endDate": "2024-04",
       "url": "https://github.com/JoeyChen-95/Attendance-Tracker"
     },
-    {
-      "name": "BusyTiger Shop: An Online Trading Platform",
-      "summary": "An marketplace platform that allows users to buy and sell products, developed using Spring Boot, MySQL, and Vue, providing a user-friendly interface and secure transactions.",
-      "highlights": ["Java","Spring Boot", "MySQL", "Vue", "RESTful API", "Redis"],
-      "startDate": "2022-05",
-      "endDate": "2022-09",
-      "url": "https://github.com/JoeyChen-95/BusyTiger_Shop"
-    },
+
     {
       "name": "Minimalist Blockchain System for Scalability Study",
       "summary": "Develop a minimalist blockchain system closely following the Bitcoin design in C and CMake, aiming to study the scalability of blockchain systems.",
@@ -237,6 +230,14 @@
       "startDate": "2022-09",
       "endDate": "2023-04",
       "url": "https://github.com/IngTian/ECSE458_Minimalist_Blockchain"
+    },
+    {
+      "name": "BusyTiger Shop: An Online Trading Platform",
+      "summary": "An marketplace platform that allows users to buy and sell products, developed using Spring Boot, MySQL, and Vue, providing a user-friendly interface and secure transactions.",
+      "highlights": ["Java","Spring Boot", "MySQL", "Vue", "RESTful API", "Redis"],
+      "startDate": "2022-05",
+      "endDate": "2022-09",
+      "url": "https://github.com/JoeyChen-95/BusyTiger_Shop"
     },
     {
       "name": "Library Management System",
