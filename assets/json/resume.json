@@ -184,13 +184,13 @@
   ,
   "languages": [
     {
-      "language": "Mandarin",
-      "fluency": "Native",
+      "language": "English",
+      "fluency": "Fluent",
       "icon": ""
     },
     {
-      "language": "English",
-      "fluency": "Fluent",
+      "language": "Mandarin",
+      "fluency": "Native",
       "icon": ""
     },
     {
@@ -199,24 +199,10 @@
       "icon": ""
     }
   ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
   "projects": [
     {
       "name": "University Attendance Tracker",
-      "summary": "a cloud-based student attendance tracking system using the MongoDB, React, Express, and Node.js (MERN) stack, improving attendance accuracy and reducing manual errors.",
+      "summary": "A cloud-based student attendance tracking system using the MongoDB, React, Express, and Node.js (MERN) stack, improving attendance accuracy and reducing manual errors.",
       "highlights": ["MongoDB", "React", "Express", "Node.js", "MERN Stack", "AWS EC2", "Docker"],
       "startDate": "2024-03",
       "endDate": "2024-04",
