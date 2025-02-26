@@ -11,14 +11,14 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "Projects",
-          description: "A growing collection of your cool projects.",
+          description: "Here are some interesting projects that I have done.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          description: "",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
@@ -393,12 +393,7 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-university-attendance-tracker",
-          title: 'University Attendance Tracker',
-          description: "A cloud-based student attendance tracking system using the MongoDB, React, Express, and Node.js (MERN) stack, improving attendance accuracy and reducing manual errors.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-2",
+          section: "News",},{id: "projects-project-2",
           title: 'project 2',
           description: "a project with a background image and giscus comments",
           section: "Projects",handler: () => {
@@ -413,6 +408,11 @@ ninja.data = [{
           description: "another without an image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
+            },},{id: "projects-university-attendance-tracker",
+          title: 'University Attendance Tracker',
+          description: "A cloud-based student attendance tracking system using the MongoDB, React, Express, and Node.js (MERN) stack, improving attendance accuracy and reducing manual errors.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/attendance_tracker/";
             },},{
         id: 'social-email',
         title: 'email',
