@@ -393,9 +393,9 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-university-attendance-tracker",
+          title: 'University Attendance Tracker',
+          description: "A cloud-based student attendance tracking system using the MongoDB, React, Express, and Node.js (MERN) stack, improving attendance accuracy and reducing manual errors.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project/";
             },},{id: "projects-project-2",
