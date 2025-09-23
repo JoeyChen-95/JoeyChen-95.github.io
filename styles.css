@@ -86,3 +86,43 @@ a { word-break: break-word; }
 .visit-btn:hover {
   background: rgba(37, 99, 235, 0.08);
 }
+
+
+/* Intro section layout */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;   /* 左图 220px，右边自适应 */
+  gap: 32px;
+  align-items: center;
+}
+
+.intro-photo img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.intro-text h2 {
+  margin-top: 0;
+  font-size: clamp(24px, 4vw, 32px);
+}
+
+.intro-text p {
+  margin: 0 0 12px;
+  line-height: 1.6;
+}
+
+/* 放大 Hobby 区块的 emoji，但保持文字大小不变 */
+#hobby .contact li {
+  font-size: 1rem;           /* 保持文字常规大小 */
+}
+
+#hobby .contact li .emoji {
+  font-size: 1.8rem;         /* 放大 emoji */
+  vertical-align: middle;
+}
+
+
+
+

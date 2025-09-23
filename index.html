@@ -26,10 +26,49 @@
         <a href="#project">Project</a>
         <a href="#skill">Skill</a>
         <a href="#contact">Contact</a>
+        <a href="#hobby">Hobbies</a>
       </nav>
     </header>
 
     <main id="main" class="container">
+      <!-- ===== Intro Section ===== -->
+      <section id="intro" class="block intro">
+        <div class="intro-grid">
+          <!-- Left: Photo -->
+          <div class="intro-photo">
+            <img
+              src="img/Junjian_Chen_pic.JPG"
+              alt="Photo of Junjian (Joey) Chen"
+            />
+          </div>
+
+          <!-- Right: Intro Text -->
+          <div class="intro-text">
+            <h2>Hello, I'm Junjian (Joey) Chen 👋</h2>
+            <p>
+              I’m a <strong>Software Developer based in Toronto</strong> with a
+              strong interest in <strong>full-stack web development</strong>,
+              <strong>cloud computing</strong>, and
+              <strong>AI-driven applications</strong>. I love exploring emerging
+              technologies and creating scalable, user-friendly solutions that
+              combine solid backend performance with elegant frontend design.
+            </p>
+            <p>
+              My current tech stack includes <strong>React</strong>,
+              <strong>TypeScript</strong>, <strong>Java</strong>,
+              <strong>Spring Boot</strong>, <strong>Node.js/Express</strong>,
+              and databases such as <strong>MySQL</strong>,
+              <strong>MongoDB</strong>, and <strong>Redis</strong>. I’m also
+              experienced with <strong>AWS</strong> and
+              <strong>Azure</strong> for cloud infrastructure,
+              <strong>Docker</strong> for containerization, and modern DevOps
+              tools for deployment and automation.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Main Sections ===== -->
       <section id="education" class="block">
         <h2>Education</h2>
         <ul class="timeline">
@@ -270,6 +309,38 @@
             </p>
           </li>
 
+          <li class="card">
+            <div class="row row--between">
+              <div class="row company-wrap">
+                <h3>MyGPT</h3>
+                <a
+                  class="visit-btn"
+                  href="https://github.com/JoeyChen-95/MyGPT"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Repo
+                </a>
+              </div>
+              <span class="muted">2024.01</span>
+            </div>
+
+            <p>
+              Developed a ChatGPT-style web application that replicates the
+              original interface and typing animation, built with
+              <strong>React</strong> and <strong>Next.js</strong>. Implemented
+              persistent storage of chats and messages using
+              <strong>Prisma</strong> with <strong>SQLite</strong>, and
+              integrated the <strong>Azure OpenAI Service</strong> to provide
+              dynamic, real-time responses.
+            </p>
+
+            <p class="muted tech">
+              <strong>Tech:</strong> React, Next.js, Prisma, SQLite, Azure
+              OpenAI Service
+            </p>
+          </li>
+
           <!-- Project 2 -->
 
           <li class="card">
@@ -398,9 +469,6 @@
               <li>Linux</li>
               <li>Nginx</li>
               <li>Tomcat</li>
-              <li>Git</li>
-              <li>Bitbucket</li>
-              <li>JIRA</li>
             </ul>
           </div>
 
@@ -425,6 +493,30 @@
               <li>Spark</li>
               <li>Databricks</li>
               <li>Azure Synapse Analytics</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Project Management & Collaboration</h3>
+            <ul class="tags">
+              <li>Git</li>
+              <li>Jira</li>
+              <li>Confluence</li>
+              <li>Agile</li>
+              <li>Microsoft Teams</li>
+              <li>GitHub</li>
+              <li>Bitbucket</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Generative AI</h3>
+            <ul class="tags">
+              <li>ChatGPT</li>
+              <li>Google Gemini</li>
+              <li>GitHub Copilot</li>
+              <li>Azure OpenAI Service</li>
+              <li>LangChain</li>
             </ul>
           </div>
         </div>
@@ -459,12 +551,25 @@
           </li>
         </ul>
       </section>
+
+      <!-- ===== Hobby Section ===== -->
+      <section id="hobby" class="block">
+        <h2>Hobbies</h2>
+        <ul class="contact">
+          <li><span class="emoji">⛰️</span> Hiking and exploring nature</li>
+          <li><span class="emoji">🏸</span> Badminton</li>
+          <li><span class="emoji">🚶‍♂️🏙️</span> City walking and exploration</li>
+          <li>
+            <span class="emoji">📱💻🎧</span> Collecting electronic gadgets
+          </li>
+        </ul>
+      </section>
     </main>
 
     <footer class="container site-footer">
       <small
-        >© <span id="year"></span> Your Name · Built with HTML/CSS/JS · Deployed
-        on GitHub Pages</small
+        >© <span id="year"></span> Junjian Chen · Built with HTML/CSS/JS ·
+        Deployed on GitHub Pages</small
       >
     </footer>
 
