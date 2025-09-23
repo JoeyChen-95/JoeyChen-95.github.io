@@ -1,56 +1,418 @@
-<!doctype html>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>我的主页</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal website" />
+    <title>Junjian(Joey) Chen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="container">
-      <h1>你好，我是 <span class="accent">Your Name</span> 👋</h1>
-      <p>这是我在 GitHub Pages 上的个人主页。</p>
-      <nav>
-        <a href="#about">关于我</a>
-        <a href="#projects">项目</a>
-        <a href="#contact">联系</a>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="container site-header">
+      <div class="brand">
+        <h1>Junjian(Joey) Chen</h1>
+        <p>Software Developer · Toronto</p>
+      </div>
+      <nav aria-label="Primary">
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#project">Project</a>
+        <a href="#skill">Skill</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main class="container">
-      <section id="about">
-        <h2>关于我</h2>
-        <p>一句话自我介绍。你可以在这里写研究/工作方向、兴趣等。</p>
-      </section>
-
-      <section id="projects">
-        <h2>项目</h2>
-        <ul class="cards">
+    <main id="main" class="container">
+      <section id="education" class="block">
+        <h2>Education</h2>
+        <ul class="timeline">
           <li>
-            <h3>项目 A</h3>
-            <p>简单描述项目与亮点。</p>
-            <a class="btn" href="https://github.com/yourname/project-a" target="_blank" rel="noreferrer">查看</a>
+            <div class="row">
+              <div>
+                <h3>University of Toronto</h3>
+                <p>
+                  Master of Engineering in Electrical and Computer Engineering,
+                  CGPA: 3.97/4.00
+                </p>
+              </div>
+              <span class="muted"> 2023.09 — 2025.05</span>
+            </div>
+            <p class="muted">
+              Relevant coursework:
+              <a
+                href="https://sgs.calendar.utoronto.ca/course/mie1628h"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cloud-Based Data Analytics</a
+              >;
+              <a
+                href="https://www.ece.utoronto.ca/graduates/courses/timetable/catalogue-communications/#ECE1508HApplied"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Deep Learning</a
+              >;
+              <a
+                href="https://sgs.calendar.utoronto.ca/course/ece1779h"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Cloud Computing</a
+              >;
+              <a
+                href="https://iqua.ece.toronto.edu/baochun/ece1771f/syllabus.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Quality of Service</a
+              >.
+            </p>
           </li>
           <li>
-            <h3>项目 B</h3>
-            <p>再放一个代表作。</p>
-            <a class="btn" href="https://github.com/yourname/project-b" target="_blank" rel="noreferrer">查看</a>
+            <div class="row">
+              <div>
+                <h3>McGill University</h3>
+                <p>
+                  Bachelor of Engineering in Electrical and Computer
+                  Engineering, CGPA:3.80/4.00
+                </p>
+              </div>
+              <span class="muted"> 2019.09 — 2023.05</span>
+            </div>
+            <p class="muted">
+              Relevant coursework:
+              <a
+                href="https://coursecatalogue.mcgill.ca/courses/comp-251/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Algorithms and Data Structures</a
+              >;
+
+              <a
+                href="https://coursecatalogue.mcgill.ca/courses/ecse-427/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Operating Systems</a
+              >;
+
+              <a
+                href="https://coursecatalogue.mcgill.ca/courses/comp-512/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Distributed Systems</a
+              >;
+
+              <a
+                href="https://coursecatalogue.mcgill.ca/courses/ecse-321/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Introduction to Software Engineering</a
+              >;
+
+              <a
+                href="https://coursecatalogue.mcgill.ca/courses/ecse-429/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Software Validation</a
+              >;
+
+              <a
+                href="https://coursecatalogue.mcgill.ca/courses/comp-551/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Applied Machine Learning</a
+              >.
+            </p>
           </li>
         </ul>
       </section>
 
-      <section id="contact">
-        <h2>联系</h2>
-        <ul>
-          <li>📧 邮箱：you@example.com</li>
-          <li>🐙 GitHub：<a href="https://github.com/yourname" target="_blank" rel="noreferrer">@yourname</a></li>
-          <li>💼 LinkedIn：<a href="#" target="_blank" rel="noreferrer">Your LinkedIn</a></li>
+      <section id="experience" class="block">
+        <h2>Experience</h2>
+        <ul class="cards">
+          <li class="card">
+            <!-- Row 1: company (left) · time (right) -->
+            <div class="row row--between">
+              <div class="company-wrap">
+                <h3>Volanté Systems</h3>
+                <a
+                  class="visit-btn"
+                  href="https://www.volantesystems.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit Site
+                </a>
+              </div>
+              <span class="muted">2024.09 — 2024.12</span>
+            </div>
+
+            <!-- Row 2: position (left) · location (right) -->
+            <div class="row row--between subrow">
+              <p class="position muted">Software Developer Co-op</p>
+              <span class="location muted">Toronto, ON, Canada</span>
+            </div>
+
+            <p class="keywords muted">
+              <strong>Keywords:</strong> React, TypeScript, MobX, Jest, Agile,
+              Jira, Confluence, Bitbucket
+            </p>
+
+            <ul class="bullets">
+              <li>
+                Developed 10+ new features for a Point-of-Sale (POS) system,
+                implementing frontend designs from
+                <strong>Figma</strong> prototypes using <strong>React</strong>,
+                <strong>TypeScript</strong>, and <strong>MobX</strong>, and
+                conducted unit testing with <strong>Jest</strong>.
+              </li>
+              <li>
+                Diagnosed and resolved 50+ frontend bugs and optimized 20+ user
+                flows, collaborating closely with the product team to align code
+                with product requirements and reducing bug rates by 25%.
+              </li>
+              <li>
+                Participated in <strong>Agile</strong> sprints, using
+                <strong>Jira</strong> to track sprint progress and manage
+                tickets, <strong>Confluence</strong> to document requirements
+                and team knowledge, and <strong>Bitbucket</strong> for version
+                control and code reviews.
+              </li>
+            </ul>
+          </li>
+          <li class="card">
+            <!-- Row 1: company (left) · time (right) -->
+            <div class="row row--between">
+              <div class="company-wrap">
+                <h3>YITU Technology</h3>
+                <a
+                  class="visit-btn"
+                  href="https://www.yitutech.com/en"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit Site
+                </a>
+              </div>
+              <span class="muted">2022.05 — 2022.08</span>
+            </div>
+
+            <!-- Row 2: position (left) · location (right) -->
+            <div class="row row--between subrow">
+              <p class="position muted">Software Developer Intern</p>
+              <span class="location muted">Fuzhou, Fujian, China</span>
+            </div>
+
+            <!-- Keywords line -->
+            <p class="keywords muted">
+              <strong>Keywords:</strong> Java, Spring Boot, Redis, MySQL,
+              RESTful APIs, JUnit, Swagger
+            </p>
+
+            <ul class="bullets">
+              <li>
+                Developed and optimized backend services using
+                <strong>Java</strong> and <strong>Spring Boot</strong>,
+                integrating third-party Ads APIs and implementing a
+                <strong>Redis</strong> caching layer that reduced external API
+                calls by 80% and improved response time by 5×.
+              </li>
+              <li>
+                Designed and maintained <strong>MySQL</strong> database schemas
+                and <strong>RESTful APIs</strong> for an HR system used by
+                8,000+ employees.
+              </li>
+              <li>
+                Conducted comprehensive testing using <strong>JUnit</strong> and
+                <strong>Swagger</strong>, improving code coverage and
+                identifying 30+ critical bugs.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section id="project" class="block">
+        <h2>Project</h2>
+        <ul class="cards">
+          <!-- Project 1 -->
+          <li class="card">
+            <div class="row row--between">
+              <div class="row company-wrap">
+                <h3>University Attendance Tracker</h3>
+                <a
+                  class="visit-btn"
+                  href="https://github.com/JoeyChen-95/Attendance-Tracker"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit Repo
+                </a>
+              </div>
+              <span class="muted">2024.03 — 2024.04</span>
+            </div>
+            <p>
+              A web app that helps universities track student attendance more
+              accurately and reduce manual errors. Includes easy sign-in,
+              attendance records, and reliable deployment for everyday use.
+            </p>
+            <p class="muted tech">
+              <strong>Tech:</strong> Node.js, Express, React, MongoDB, Docker,
+              AWS ECS
+            </p>
+          </li>
+
+          <!-- Project 2 -->
+
+          <li class="card">
+            <div class="row row--between">
+              <div class="row company-wrap">
+                <h3>Minimalist Blockchain System for Scalability Study</h3>
+                <a
+                  class="visit-btn"
+                  href="https://github.com/IngTian/ECSE458_Minimalist_Blockchain"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit Repo
+                </a>
+                <a
+                  class="visit-btn"
+                  href="https://drive.google.com/file/d/1MD0swVtiAQFnNbtWcnsHL_9dYTGoEtOE/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Poster
+                </a>
+              </div>
+              <span class="muted">2022.09 — 2023.04</span>
+            </div>
+
+            <p>
+              In this project, we developed a minimalist blockchain system
+              closely following the original Bitcoin design in
+              <strong>C</strong> and <strong>CMake</strong>. Leveraged
+              <strong>MySQL</strong> for data persistence and employed
+              <strong>TCP Socket</strong> for data transmission across different
+              machines. We also executed a series of experiments to identify and
+              analyze potential bottlenecks within the blockchain system. This
+              project provided valuable insights into the challenges of
+              blockchain scalability and performance optimization. It can also
+              serve as a prototype for future blockchain system studies.
+            </p>
+
+            <p class="muted tech">
+              <strong>Tech:</strong> Blockchain, C, CMake, MySQL, TCP Socket
+            </p>
+          </li>
+
+          <!-- Project 3 -->
+          <li class="card">
+            <div class="row row--between">
+              <div class="row company-wrap">
+                <h3>BusyTiger Shop</h3>
+                <a
+                  class="visit-btn"
+                  href="https://github.com/JoeyChen-95/BusyTiger_Shop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit Repo
+                </a>
+              </div>
+              <span class="muted">2022.06 — 2022.09</span>
+            </div>
+            <p>
+              BusyTiger Shop is a full-stack web app for buying and selling
+              second-hand items. Users can sign up, list products, browse all
+              items, place orders, and manage their profiles. An administrator
+              dashboard lets you manage users, items, and orders.
+            </p>
+            <p class="muted tech">
+              <strong>Tech:</strong> Java, Spring Boot, MySQL, MyBatis, Redis,
+              Swagger, Vue
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="skill" class="block">
+        <h2>Skill</h2>
+        <div class="skills-grid">
+          <div>
+            <h3>Languages</h3>
+            <ul class="tags">
+              <li>Python</li>
+              <li>Java</li>
+              <li>TypeScript</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Frameworks</h3>
+            <ul class="tags">
+              <li>React</li>
+              <li>PyTorch</li>
+              <li>Django</li>
+              <li>Node.js</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <ul class="tags">
+              <li>Git</li>
+              <li>Docker</li>
+              <li>AWS</li>
+              <li>Linux</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="block">
+        <h2>Contact</h2>
+        <ul class="contact">
+          <li>
+            📧 Email:
+            <a href="mailto:junjian.chenc@outlook.com"
+              >junjian.chenc@outlook.com</a
+            >
+          </li>
+          <li>
+            🐙 GitHub:
+            <a
+              href="https://github.com/JoeyChen-95"
+              target="_blank"
+              rel="noreferrer"
+              >@JoeyChen-95</a
+            >
+          </li>
+          <li>
+            💼 LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/junjian-chen-b582791a0/"
+              target="_blank"
+              rel="noreferrer"
+              >Junjian(Joey) Chen</a
+            >
+          </li>
         </ul>
       </section>
     </main>
 
-    <footer class="container">
-      <p>© <span id="year"></span> Your Name · 使用 GitHub Pages 部署</p>
+    <footer class="container site-footer">
+      <small
+        >© <span id="year"></span> Your Name · Built with HTML/CSS/JS · Deployed
+        on GitHub Pages</small
+      >
     </footer>
 
     <script src="script.js"></script>

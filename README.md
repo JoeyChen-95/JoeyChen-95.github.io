@@ -1,13 +1,14 @@
-# Personal Homepage Starter (GitHub Pages)
+# Personal Website (English)
 
-一个极简的静态个人主页模板，适用于 GitHub Pages：`username.github.io`。
+A minimal, single-page personal website for GitHub Pages. Sections included: **education, experience, project, skill, contact**.
 
-## 使用
-1. 把仓库改名为 `your-username.github.io`（注意和 GitHub 用户名完全一致）。
-2. 推送到 `main` 分支。
-3. 在仓库的 **Settings → Pages** 确认 Source 使用 `main` 分支（root）。几分钟后即可访问。
+## Quick Start
+1. Create a public repo named: `YOUR_USERNAME.github.io`.
+2. Put these files in the repo root (index.html, styles.css, script.js).
+3. Push to `main`. In **Settings → Pages**, set Source to `Deploy from a branch`, `main` branch, root.
+4. Visit: `https://YOUR_USERNAME.github.io`.
 
-## 自定义
-- 编辑 `index.html` 中的名字、链接、内容。
-- 修改 `styles.css` 自定义配色和布局。
-- 添加 `projects/`、`images/` 等子目录，随意扩展。
+## Customize
+- Replace text in `index.html` (name, links, items).
+- Extend sections or add images/assets as needed.
+- Keep code in English as requested.
