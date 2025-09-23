@@ -131,4 +131,39 @@ a { word-break: break-word; }
 
 
 
+/* ---------- 响应式优化 ---------- */
+@media (max-width: 768px) {
+  /* Intro 区块在手机端上下排列 */
+  .intro-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .intro-photo {
+    width: 160px;        /* 缩小头像宽度 */
+    margin: 0 auto;      /* 居中头像 */
+  }
+  .intro-photo img {
+    width: 160px;
+  }
+
+  /* 让 row 内元素可以自动换行 */
+  .row,
+  .subrow {
+    flex-wrap: wrap;
+  }
+
+  /* 项目与经历卡片一列显示 */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-photo {
+    width: 120px;
+  }
+  .intro-photo img {
+    width: 120px;
+  }
+}
 
