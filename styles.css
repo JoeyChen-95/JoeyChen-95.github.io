@@ -89,19 +89,25 @@ a { word-break: break-word; }
 
 
 /* Intro section layout */
+/* Intro image sizing */
 .intro-grid {
   display: grid;
-  grid-template-columns: 300px 1fr;   /* 左图 220px，右边自适应 */
+  grid-template-columns: 230px 1fr;  /* left photo fixed, right text fluid */
   gap: 32px;
   align-items: center;
 }
 
+.intro-photo { width: 230px; }
+
 .intro-photo img {
-  width: 100%;
+  display: block;
+  width: 100%;        /* fill the 220px box */
+  height: auto;       /* keep aspect ratio */
+  max-width: 100%;    /* never overflow container */
   border-radius: 12px;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  object-fit: cover;  /* optional */
 }
+
 
 .intro-text h2 {
   margin-top: 0;
