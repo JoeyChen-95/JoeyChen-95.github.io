@@ -20,10 +20,10 @@ social: true # includes social icons at the bottom of the page
 
 ---
 
-Hello! I’m Junjian (Joey) Chen, a passionate software developer with a strong foundation in computer engineering. Currently, I’m pursuing my Master of Engineering at the University of Toronto. I completed my Bachelor of Engineering from McGill University in May 2023.
+Hello! I’m Junjian (Joey) Chen, a Canadian full-stack software engineer based in Toronto. I hold a Master of Engineering in Computer Engineering from the University of Toronto and a Bachelor of Engineering in Computer Engineering from McGill University.
 
-With hands-on experience in both frontend and backend development, I’ve built scalable applications, improved user experiences, and optimized system performance. In Summer 2022, I developed Spring Boot–powered backend services at [YITU Technology](https://www.yitutech.com/en). Then in Fall 2024, I expanded my skill set by creating React-based UI/UX enhancements at [Volante Systems](https://www.volantesystems.com/).
+I currently build full-stack and AI-powered legal-technology products at LawyerDoneDeal, working with React, TypeScript, Node.js, SQL Server, Azure OCR, and vision LLMs. Previously, I developed React-based Point of Sale software at [Volante Systems](https://www.volantesystems.com/) and Spring Boot backend services at [YITU Technology](https://www.yitutech.com/en).
 
-Beyond work, I enjoy taking on innovative projects, such as building a cloud-based university attendance tracker and developing an online marketplace platform. I thrive in collaborative, fast-paced environments where I can apply my skills in React, TypeScript, Java, Python, and cloud technologies like AWS and Docker.
+I enjoy creating dependable applications and automation that improve real-world workflows. My core tools include React, TypeScript, Node.js, Java, cloud platforms, and containerized services.
 
 Feel free to explore my projects and connect with me on [LinkedIn](https://www.linkedin.com/in/junjian-chen-b582791a0/) or [GitHub](https://github.com/JoeyChen-95).

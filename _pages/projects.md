@@ -5,7 +5,7 @@ permalink: /projects/
 description: Here are some interesting projects that I have done.
 nav: true
 nav_order: 3
-display_categories: [Study, Fun]
+display_categories: [work]
 horizontal: false
 ---
 
@@ -14,8 +14,8 @@ horizontal: false
 {% if site.enable_project_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
+  <a id="{{ category }}" href="#{{ category }}">
+    <h2 class="category">{{ category | capitalize }}</h2>
   </a>
   {% assign categorized_projects = site.projects | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}

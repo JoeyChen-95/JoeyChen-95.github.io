@@ -10,7 +10,7 @@ description:
 <div class="contact-section">
     <div class="contact-item">
         <i class="fas fa-envelope"></i>
-        <a href="mailto:junjian.chen@mail.utoronto.ca">junjian.chen@mail.utoronto.ca</a>
+        <a href="mailto:junjian.chenc@outlook.com">junjian.chenc@outlook.com</a>
     </div>
     <div class="contact-item">
         <i class="fas fa-map-marker-alt"></i>
@@ -58,5 +58,3 @@ description:
     text-decoration: underline;
 }
 </style>
-
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
