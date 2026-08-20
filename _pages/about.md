@@ -17,7 +17,6 @@ social: true # includes social icons at the bottom of the page
 #   enabled: true # includes a list of news items
 #   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
 #   limit: 5 # leave blank to include all the news in the `_news` folder
-
 ---
 
 Hello! I’m Junjian (Joey) Chen, a Canadian full-stack software engineer based in Toronto. I hold a Master of Engineering in Computer Engineering from the University of Toronto and a Bachelor of Engineering in Computer Engineering from McGill University.

@@ -7,7 +7,7 @@
     "phone": "+1 514-318-2698",
     "url": "https://joeychen-95.github.io/",
     "summary": "Canadian full-stack software engineer specializing in React, TypeScript, and Node.js. I build dependable web applications, automation services, and AI-powered document workflows.",
-    "location": {"city": "Toronto", "countryCode": "CA", "region": "Ontario"},
+    "location": { "city": "Toronto", "countryCode": "CA", "region": "Ontario" },
     "profiles": []
   },
   "work": [
@@ -56,17 +56,38 @@
     }
   ],
   "education": [
-    {"institution": "University of Toronto", "location": "Toronto, Ontario, Canada", "area": "Computer Engineering", "studyType": "Master of Engineering", "startDate": "2023-09", "endDate": "2025-05", "score": "3.97/4.00", "courses": ["Cloud-Based Data Analytics", "Deep Learning", "Cloud Computing", "Quality of Service"]},
-    {"institution": "McGill University", "location": "Montreal, Quebec, Canada", "area": "Computer Engineering", "studyType": "Bachelor of Engineering", "startDate": "2019-09", "endDate": "2023-05", "score": "3.80/4.00", "courses": ["Algorithms and Data Structures", "Distributed Systems", "Software Engineering", "Software Validation"]}
+    {
+      "institution": "University of Toronto",
+      "location": "Toronto, Ontario, Canada",
+      "area": "Computer Engineering",
+      "studyType": "Master of Engineering",
+      "startDate": "2023-09",
+      "endDate": "2025-05",
+      "score": "3.97/4.00",
+      "courses": ["Cloud-Based Data Analytics", "Deep Learning", "Cloud Computing", "Quality of Service"]
+    },
+    {
+      "institution": "McGill University",
+      "location": "Montreal, Quebec, Canada",
+      "area": "Computer Engineering",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2019-09",
+      "endDate": "2023-05",
+      "score": "3.80/4.00",
+      "courses": ["Algorithms and Data Structures", "Distributed Systems", "Software Engineering", "Software Validation"]
+    }
   ],
   "skills": [
-    {"name": "Programming Languages", "keywords": ["TypeScript", "JavaScript", "Java", "Python", "C/C++"]},
-    {"name": "Frontend", "keywords": ["React.js", "Redux Toolkit", "MUI", "MobX", "HTML", "CSS"]},
-    {"name": "Backend", "keywords": ["Node.js", "Express", "Spring Boot", "RESTful APIs", "OIDC/JWT", "OAuth 2.0"]},
-    {"name": "Databases", "keywords": ["Microsoft SQL Server", "MySQL", "PostgreSQL", "MongoDB", "Redis"]},
-    {"name": "Cloud & AI", "keywords": ["Microsoft Azure", "Azure AI Foundry", "Azure OCR", "AWS (ECS, EC2)", "Docker", "CI/CD"]},
-    {"name": "Development Tools", "keywords": ["Git", "Azure DevOps", "Browserless.io/BrowserQL", "Puppeteer", "Jest", "JUnit", "Linux"]}
+    { "name": "Programming Languages", "keywords": ["TypeScript", "JavaScript", "Java", "Python", "C/C++"] },
+    { "name": "Frontend", "keywords": ["React.js", "Redux Toolkit", "MUI", "MobX", "HTML", "CSS"] },
+    { "name": "Backend", "keywords": ["Node.js", "Express", "Spring Boot", "RESTful APIs", "OIDC/JWT", "OAuth 2.0"] },
+    { "name": "Databases", "keywords": ["Microsoft SQL Server", "MySQL", "PostgreSQL", "MongoDB", "Redis"] },
+    { "name": "Cloud & AI", "keywords": ["Microsoft Azure", "Azure AI Foundry", "Azure OCR", "AWS (ECS, EC2)", "Docker", "CI/CD"] },
+    { "name": "Development Tools", "keywords": ["Git", "Azure DevOps", "Browserless.io/BrowserQL", "Puppeteer", "Jest", "JUnit", "Linux"] }
   ],
-  "certificates": [{"name": "AWS Certified Cloud Practitioner"}],
-  "languages": [{"language": "English", "fluency": "Professional working proficiency"}, {"language": "Mandarin", "fluency": "Native"}]
+  "certificates": [{ "name": "AWS Certified Cloud Practitioner" }],
+  "languages": [
+    { "language": "English", "fluency": "Professional working proficiency" },
+    { "language": "Mandarin", "fluency": "Native" }
+  ]
 }

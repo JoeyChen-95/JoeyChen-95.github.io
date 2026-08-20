@@ -59,4 +59,3 @@ This project aims to create a convenient system for professors to efficiently ma
 <div class="caption">
     Professors can also view the courses and classes they teach. As well as all students under it and their attendance.
 </div>
-
