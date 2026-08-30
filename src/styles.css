@@ -45,7 +45,7 @@ main, footer { width: min(1080px, calc(100% - 48px)); margin: auto; }
 .primary-link { padding-bottom: 5px; border-bottom: 1px solid var(--text); font-weight: 600; }
 .primary-link .icon, .email-link .icon, .project-item > .icon { transition: transform .2s; }
 .primary-link:hover .icon, .email-link:hover .icon, .project-item:hover > .icon { transform: translateX(4px); }
-.portrait { width: 220px; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%; filter: grayscale(100%); }
+.portrait { width: 240px; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 25%; border-radius: 8px; }
 
 .section { padding: 115px 0; border-bottom: 1px solid var(--line); }
 .section-heading { display: grid; grid-template-columns: 180px 1fr; margin-bottom: 64px; }
