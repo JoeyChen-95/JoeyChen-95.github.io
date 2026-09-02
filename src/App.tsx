@@ -6,6 +6,7 @@ const navItems = [
   ["Experience", "experience"],
   ["Work", "work"],
   ["Skills", "skills"],
+  ["Education", "education"],
 ];
 
 function Icon({ name }: { name: "arrow" | "download" | "github" | "linkedin" | "mail" }) {
@@ -44,7 +45,7 @@ function App() {
         <div className="hero-copy">
           <p className="intro-label">Full-stack software engineer · Toronto</p>
           <h1>I build clear, dependable software for complex work.</h1>
-          <p className="hero-lead">I’m Junjian (Joey) Chen. I work across product interfaces, backend systems, cloud infrastructure, and applied AI.</p>
+          <p className="hero-lead">I’m Junjian (Joey) Chen. I build full-stack products with React, TypeScript, and Node.js, with a focus on legal technology and applied AI.</p>
           <div className="hero-actions">
             <a className="primary-link" href="#work">View selected work <Icon name="arrow" /></a>
             <a href="/resume.pdf" target="_blank" rel="noreferrer"><Icon name="download" /> Résumé</a>
@@ -57,7 +58,7 @@ function App() {
         <SectionHeading number="01" title="About" />
         <div className="section-body two-column">
           <p className="lead-copy">I enjoy turning complicated workflows into products that feel straightforward and reliable.</p>
-          <div className="body-copy"><p>My experience spans legal technology, retail systems, and enterprise platforms. I care about understanding the problem first, choosing maintainable tools, and polishing the details people actually use.</p><p>I hold an M.Eng. in Computer Engineering from the University of Toronto and a B.Eng. from McGill University.</p></div>
+          <div className="body-copy"><p>My experience spans legal technology, retail systems, and enterprise platforms. I work across user interfaces, backend APIs, data systems, cloud infrastructure, AI document processing, and browser automation.</p><p>I hold an M.Eng. in Computer Engineering from the University of Toronto and a B.Eng. from McGill University.</p></div>
         </div>
       </section>
 
@@ -80,10 +81,7 @@ function App() {
       <section className="section" id="work">
         <SectionHeading number="03" title="Selected work" />
         <div className="section-body project-list">
-          {projects.map((project, index) => {
-            const content = <><div className="project-index">0{index + 1}</div><div className="project-copy"><p className="project-type">{project.eyebrow}</p><h3>{project.title}</h3><p>{project.description}</p><p className="project-detail">{project.metrics}</p><p className="technologies">{project.technologies.join(" · ")}</p></div>{project.href && <Icon name="arrow" />}</>;
-            return project.href ? <a className="project-item" href={project.href} target="_blank" rel="noreferrer" key={project.title}>{content}</a> : <article className="project-item" key={project.title}>{content}</article>;
-          })}
+          {projects.map((project, index) => <article className="project-item" key={project.title}><div className="project-index">0{index + 1}</div><div className="project-copy"><p className="project-type">{project.eyebrow}</p><h3>{project.title}</h3><p>{project.description}</p><p className="project-detail">{project.metrics}</p><p className="technologies">{project.technologies.join(" · ")}</p></div></article>)}
         </div>
       </section>
 
@@ -91,6 +89,11 @@ function App() {
         <SectionHeading number="04" title="Skills" />
         <div className="section-body skills-list">
           {skillGroups.map((group) => <div className="skill-group" key={group.title}><h3>{group.title}</h3><p>{group.skills.join(" · ")}</p></div>)}
+        </div>
+        <div className="section-body additional-info">
+          <p><strong>Certification</strong><span>AWS Certified Cloud Practitioner</span></p>
+          <p><strong>Languages</strong><span>English · Mandarin</span></p>
+          <p><strong>Work authorization</strong><span>Authorized to work in Canada · No sponsorship required</span></p>
         </div>
       </section>
 
